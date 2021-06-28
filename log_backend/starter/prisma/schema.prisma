@@ -1,0 +1,26 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Text {
+  id        Int     @id @default(autoincrement())
+  name      String 
+  content   String
+}
+
+model Week {
+  id        Int     @id @default(autoincrement())  
+  startDate String //"m/d/y"
+  mon       String 
+  tues      String 
+  thurs     String 
+  wed       String 
+  fri       String 
+  sat       String 
+  sun       String 
+}
