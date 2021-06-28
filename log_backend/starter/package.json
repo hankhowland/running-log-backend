@@ -3,18 +3,19 @@
   "license": "MIT",
   "devDependencies": {
     "prisma": "2.25.0",
-    "ts-node": "10.0.0",
+    "ts-node": "^10.0.0",
     "typescript": "4.3.3"
   },
   "scripts": {
     "dev": "ts-node ./script.ts",
-    "start": "node ./script.ts"
+    "start": "npx ts-node ./script.ts"
   },
   "dependencies": {
     "@prisma/client": "^2.25.0",
     "@types/node": "^15.12.4",
     "apollo-server": "^2.25.2",
-    "graphql": "^15.5.1"
+    "graphql": "^15.5.1",
+    "ts-node": "^10.0.0"
   },
   "engines": {
     "node": ">=12.2.0"
